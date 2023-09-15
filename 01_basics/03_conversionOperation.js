@@ -32,3 +32,38 @@ console.log(typeof(stringNumber))
 // 33 => NaN (type = number)
 // true => 1 ; false => 0
 // "" => false ; "harsh" => true
+
+
+/***********operations*****************/
+
+let value = 3
+let negValue = -value
+console.log(negValue)
+
+// Arithmetic Operations
+console.log(2+2)
+console.log(2-2)
+console.log(2*2)
+console.log(2**8)
+console.log(2/3)
+console.log(2%3)
+
+// String Concatenation
+
+let str1 = "Harsh"
+let str2 = "Tripathi"
+let str3 = str1 + str2
+console.log(str3)
+
+// tricky conversions
+// String with number concatenation
+// jo pahle ayega that would be the preferred datatype
+console.log("1" + 2)
+console.log("1" + "1" + 2)
+console.log(1 + 2 + "2")
+console.log(1 + "2")
+
+// conversion to boolean
+console.log(+true)
+console.log(+"")
+

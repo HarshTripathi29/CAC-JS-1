@@ -66,4 +66,3 @@ console.log(1 + "2")
 // conversion to boolean
 console.log(+true)
 console.log(+"")
-

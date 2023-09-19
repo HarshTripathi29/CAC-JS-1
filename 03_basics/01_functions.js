@@ -52,3 +52,52 @@ function loginUserMessage(username="Unknown")
 {
     return `${username} just logged in`
 }
+
+
+//___________________________________________________________________________________//
+
+//Passing parameters in a funciton 
+
+// User adds products in the shopping cart
+// We dont know th number of items user is gonna add so how to pass the parameter
+
+// Rest operator packs all the values in a bundle and returns
+
+function calculateCartPrice(val1, val2, ...num1)
+{
+    return num1
+}
+
+console.log(calculateCartPrice(200, 300, 400, 500))
+
+// How to pass an object to a function and use it 
+
+const user = {
+    username : "Harsh",
+    price : 99,
+}
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+handleObject(user);
+
+// or we can directly pass an object as argument to the function while calling the function
+
+handleObject({
+    username : "Hitesh",
+    price : 199
+})
+
+
+// How to pass array to function 
+
+const myNewArray = [200, 300, 400]
+
+function returnSecondVlue(getArray)
+{
+    return getArray[1]
+}
+
+console.log(returnSecondVlue(myNewArray));
